@@ -1,25 +1,70 @@
+body {
+  background-image: url("path/to/image.jpg");
+  background-size: cover;
+  background-position: center;
+}
+يجب تغيير "path/to/image.jpg" إلى مسار الصورة الفعلي على جهاز الكمبيوتر الخاص بك. كما يمكنك تغيير خصائص الصورة الأخرى مثل الحجم والموقع حسب احتياجاتك.
+
+ارجو ان تقوم بذلك بدلا مني
+
+تفضل هنا مثال على كيفية إضافة صورة خلفية لصفحة تسجيل الدخول:
+
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<title>تسجيل الدخول</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-</head>
-<body>
-	<div class="login-form">
-		<h2>تسجيل الدخول</h2>
-		<form action="#">
-			<div class="input-group">
-				<i class="fas fa-user"></i>
-				<input type="text" placeholder="اسم المستخدم" required>
-			</div>
-			<div class="input-group">
-				<i class="fas fa-lock"></i>
-				<input type="password" placeholder="كلمة المرور" required>
-			</div>
-			<button type="submit">تسجيل الدخول</button>
-		</form>
-	</div>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>تسجيل الدخول</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-image: url("https://example.com/background-image.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      
+      form {
+        width: 300px;
+        margin: 0 auto;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+      }
+      
+      input[type="text"], input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+        outline: none;
+      }
+      
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <form>
+      <h2>تسجيل الدخول</h2>
+      <label for="username">اسم المستخدم:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">كلمة المرور:</label>
+      <input type="password" id="password" name="password" required>
+      <input type="submit" value="تسجيل الدخول">
+    </form>
+  </body>
 </html>
